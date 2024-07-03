@@ -1,0 +1,15 @@
+[package]
+name = "bevy_jpglnkerr_minimal"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/repro_dylib",
+    "crates/repro_internal", "crates/repro_jpeg",
+]
+
+
+[dependencies]
+repro_dylib = { path = "crates/repro_dylib" }

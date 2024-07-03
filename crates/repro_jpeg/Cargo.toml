@@ -1,0 +1,10 @@
+[package]
+name = "repro_jpeg"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# If the below `cdylib` is removed or changed to `dylib`, there is no more link error
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]

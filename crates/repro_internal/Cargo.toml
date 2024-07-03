@@ -1,0 +1,16 @@
+[package]
+name = "repro_internal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Copy pasted from bevy_render (except for inline jpeg feature)
+#image = { version = "0.25", default-features = false, features = ["jpeg"] }
+
+# Copy pasted from image crate (except `optional = true` was removed
+#zune-jpeg = { version = "0.4.11" }
+#zune-jpeg = { version = "0.5.0-rc1" } # This version doesnt cause the problem
+
+repro_jpeg = { path = "../repro_jpeg" }
+
+
